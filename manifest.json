@@ -1,6 +1,22 @@
 {
   "name": "RAPPORT: FII Report Viewer",
   "description": "Extensão que torna a visualização de informes de fundos imobiliários mais fácil",
-  "version": "1.0",
-  "manifest_version": 3
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "css": ["style.css", "bulma.css"],
+      "js": ["content.js"],
+      "matches": ["http://fnet.bmfbovespa.com.br/*", "https://fnet.bmfbovespa.com.br/*"]
+    }
+  ]
 }
