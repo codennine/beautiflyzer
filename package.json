@@ -1,0 +1,26 @@
+{
+  "name": "beautiflyzer",
+  "version": "1.0.0",
+  "description": "This project beautifies HTML FII reports",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codennine/beautiflyzer.git"
+  },
+  "keywords": [
+    "FII",
+    "beautify"
+  ],
+  "author": "Edigleysson Silva <codesilva@github.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codennine/beautiflyzer/issues"
+  },
+  "homepage": "https://github.com/codennine/beautiflyzer#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
